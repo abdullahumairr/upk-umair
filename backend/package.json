@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "type": "module",
   "description": "Backend Bank Soal Ujian",
   "main": "src/server.js",
   "scripts": {
@@ -12,8 +13,7 @@
     "dotenv": "^17.4.1",
     "express": "^5.2.1",
     "multer": "^2.1.1",
-    "mysql2": "^3.20.0",
-    "zod": "^4.3.6"
+    "mysql2": "^3.20.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
