@@ -58,14 +58,6 @@ export interface SubmissionAnswer {
   question_id: number;
   question_text: string;
   selected_answer: string;
-  is_correct: boolean;
-}
-
-export interface SubmissionAnswer {
-  id: number;
-  question_id: number;
-  question_text: string;
-  selected_answer: string;
   correct_answer: string;
   correct_label: string;
   is_correct: boolean;

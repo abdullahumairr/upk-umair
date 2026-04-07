@@ -5,7 +5,6 @@ const api = axios.create({
   baseURL: "http://localhost:3000/api",
 });
 
-// ─── Categories ───────────────────────────────────────
 export const getCategories = () =>
   api.get<{ success: boolean; data: Category[] }>("/categories");
 
@@ -22,7 +21,6 @@ export const updateCategory = (
 
 export const deleteCategory = (id: number) => api.delete(`/categories/${id}`);
 
-// ─── Questions ────────────────────────────────────────
 export const getQuestions = () =>
   api.get<{ success: boolean; data: Question[] }>("/questions");
 
@@ -41,7 +39,6 @@ export const updateQuestion = (id: number, data: FormData) =>
 
 export const deleteQuestion = (id: number) => api.delete(`/questions/${id}`);
 
-// ─── Exams ────────────────────────────────────────────
 export const getExams = () =>
   api.get<{ success: boolean; data: Exam[] }>("/exams");
 
@@ -71,7 +68,6 @@ export const updateExam = (
 
 export const deleteExam = (id: number) => api.delete(`/exams/${id}`);
 
-// ─── Submissions ──────────────────────────────────────
 export const submitExam = (data: {
   exam_id: number;
   participant_name: string;
